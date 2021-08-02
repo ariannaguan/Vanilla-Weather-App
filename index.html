@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/6413657402.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Week 5 Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Enter a city..."
+                autofocus="on"
+                autocomplete="off"
+                class="form-control city-input"
+                id = "city-input"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control search-button"
+                autofocus="on"
+
+              />
+            </div>
+            <div class="col-3">
+              <button class = "current-button" id = "current-button"> Current </button>
+            </div>
+          </div>
+        </form>
+        <h1> <span id="city"></span>, <span id="country">  </span></h1>
+        <ul>
+          <li id= "date"></li>
+          <li><span class = "weather-description" id = "weather-description"></span></li>
+        </ul>
+        <div class="row justify-content-center">
+          <div class="col-5">
+            <i class="fas fa-cloud-sun today-icon"></i>
+            <span class="temperature-today" id="temperature-today">  </span>
+            <span class="units"><a href="#" id ="celcius-link">°C</a> | <a href="#" id ="fahrenheit-link">°F</a></span>
+          </div>
+          <div class="col-5">
+            <ul class = "weather-details">
+              <li>Humidity: <span id = "humidity"></span> %</li>
+              <li>Wind: <span id = "wind"></span> km/h</li>
+            </ul>
+          </div>
+          <hr />
+          <div class="row justify-content-center ">
+            <div class="col-3 weather-forecast">
+              <div>Thu</div>
+              <i class="fas fa-cloud-sun-rain "></i>
+              <div>15 | 19 </div>
+            </div>
+            <div class="col-3 weather-forecast">
+              <div>Fri</div>
+              <i class="fas fa-cloud-sun "></i>
+              <div>15 | 19 </div>
+            </div>
+            <div class="col-3 weather-forecast">
+              <div>Sat</div>
+              <i class="fas fa-cloud-rain "></i>
+              <div>15 | 19 </div>
+            </div>
+            <div class="col-3 weather-forecast">
+              <div>Sun</div>
+              <i class="fas fa-cloud-showers-heavy "></i>
+              <div>15 | 19 </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src = "script.js"></script>
+  </body>
+</html>

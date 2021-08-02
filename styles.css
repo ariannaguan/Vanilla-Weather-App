@@ -1,0 +1,123 @@
+body {
+    color: #727c86;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .weather-app {
+    border: 5px solid #78b7bb;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 15px;
+  }
+  
+  .search-form {
+    margin-bottom: 10px;
+  }
+  
+  .city-input {
+    border: 2px solid #fff1c1;
+  }
+  .current-button {
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+    padding: 6px 30px;
+  }
+  
+  .current-button,
+  .search-button {
+    border: 2px solid #78b7bb;
+    border-radius: 20px;
+  
+    color: #727c86;
+  }
+  
+  .current-button:hover,
+  .search-button:hover {
+    background-color: #78b7bb;
+    box-shadow: 2px 2px 3px #727c86;
+    color: whitesmoke;
+    font-weight: 600px;
+    transition: all 200ms ease-in-out;
+  }
+  
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .weather-description {
+    text-transform: capitalize;
+  }
+  
+  ul {
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  li {
+    font-size: 17px;
+    line-height: 20px;
+    list-style: none;
+  }
+  
+  .today-icon {
+    font-size: 45px;
+    line-height: 1;
+    margin: 10px 5px 10px 0;
+  }
+  
+  .temperature-today {
+    font-size: 50px;
+    line-height: 1;
+    margin-top: 10px;
+  }
+  
+  .units {
+    position: relative;
+    top: -25px;
+  }
+  
+  a {
+    color: #727c86;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #727c86;
+    text-decoration: underline;
+  }
+  
+  a:focus {
+    font-weight: bold;
+  }
+  
+  .weather-details {
+    margin-top: 10px;
+    margin-left: 70px;
+    text-align: left;
+  }
+  
+  hr {
+    background-color: #f5d774;
+    border: 2px solid #f5d774;
+    border-radius: 30px;
+    width: auto;
+  }
+  
+  .weather-forecast {
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .weather-forecast:hover {
+    font-size: 20px;
+    text-align: center;
+    transition: all 200ms ease-in-out;
+  }
+  
