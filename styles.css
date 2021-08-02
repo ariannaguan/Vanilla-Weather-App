@@ -120,4 +120,11 @@ body {
     text-align: center;
     transition: all 200ms ease-in-out;
   }
+
+  .coder {
+    color: #78b7bb;  
+    font-size: small;
+      text-align: center;
+  }
+
   
